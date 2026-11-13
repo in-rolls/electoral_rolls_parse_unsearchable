@@ -100,7 +100,7 @@ class Dadra(Gujarat):
         return result, is_splitted
 
     def correct_alignment(self, raw):
-        # If correct aligment acrivated
+        # If correct alignment acrivated
         if len(raw) == 7:
             age = ''.join(re.findall('\d+', raw[5]))
             gender = self.male_or_female(raw[5])

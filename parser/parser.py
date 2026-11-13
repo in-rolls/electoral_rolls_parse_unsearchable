@@ -73,7 +73,7 @@ class Parser(Helpers, FirstLastPage):
             self.multiple_rows = False
             self.detect_columns = True
 
-        # Column names one time convertion
+        # Column names one time conversion
         self.house_number = 'house number'
         self.age = 'age'
         self.gender = 'sex'
@@ -125,7 +125,7 @@ class Parser(Helpers, FirstLastPage):
         except Exception as e:
             logging.error(f'Clean error: {e}: {raw}')
 
-        # If correct aligment is activated
+        # If correct alignment is activated
         try:
             raw = self.correct_alignment(raw)
         except:
@@ -189,7 +189,7 @@ class Parser(Helpers, FirstLastPage):
         return 'UNREADABLE'
 
     def handle_separator_without_column(self, r, result, last_key):
-        # For when column isnt found but there's a separator in the field
+        # For when column isn't found but there's a separator in the field
 
         is_splitted = False
         r = r.replace(';', ':')
@@ -274,7 +274,7 @@ class Parser(Helpers, FirstLastPage):
     #     return accuracy 
 
     def process_pdf(self, pdf_file_path):
-        # Get pdf file, process convertion and process output
+        # Get pdf file, process conversion and process output
 
         logging.info(f'Converting {pdf_file_path} to img...')
         try:
