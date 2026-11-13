@@ -287,8 +287,8 @@ class Helpers:
 
     # Deprectaed removing photos
     # def ommit_sentences(self, text):
-    #     if self.ommit:
-    #         for o in self.ommit:
+    #     if self.omit:
+    #         for o in self.omit:
     #             text = text.replace(o, '')
             
     #     return text

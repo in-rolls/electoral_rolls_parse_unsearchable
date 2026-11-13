@@ -435,7 +435,7 @@ def pdf_process(pdf_file_name):
 		input_images = os.listdir(input_pdf_images_path)
 		sort_nicely(input_images)
 		
-		#empty intial data
+		#empty initial data
 		df = pd.DataFrame(columns = COLUMNS)
 		order_problem = []
 		
@@ -452,7 +452,7 @@ def pdf_process(pdf_file_name):
 				continue
 				
 
-			#ingnore 2nd page and last page
+			#ignore 2nd page and last page
 			if page == '2.jpg' or input_images[-1] == page:
 				continue            
 
